@@ -90,6 +90,10 @@ article {
     text-align: center;
 }
 
+.hero h1 {
+    position: absolute;
+}
+
 footer {
     border-top: 2px solid black;
 }
@@ -99,7 +103,7 @@ footer {
 }
 
 .socialmedia img {
-    width: 80px;
+    width: 75px;
     height: auto;
 }
 
