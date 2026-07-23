@@ -1,5 +1,12 @@
+:root {
+    --Color-CinA: grey;
+    --Color-CHnN: darkblue;
+    --Color-Border: Black;
+    --Color-aside: #333;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--Color-CHnN);
     padding: 10px;
 }
 
@@ -10,15 +17,15 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--Color-CHnN);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--Color-Border);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--Color-CinA);
 }
 
 p {
@@ -31,7 +38,7 @@ main {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--Color-Border);
     text-align: center;
 }
 
@@ -43,9 +50,9 @@ aside img {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0/ 0.2);
+    border: 1px solid rgb(var(--Color-Border)/ 0.2);
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color: var(--Color-CinA);
+    color: var(--Color-aside);
     text-align: center;
 }
