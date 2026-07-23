@@ -71,22 +71,21 @@ h1 {
 
 article {
     position: absolute;
-    bottom: 20px;
+    bottom: 5px;
     width: 96%;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff
+    background-color: var(--accent2-color);
+    color: var(--accent1-color)
 }
 
 .hero article img {
     float: right;
-    width: 125px;
+    width: 100px;
 }
 
 .hero article {
     position: absolute;
-    padding: 20px;
+    font-size: larger;
     text-align: center;
 }
 
@@ -116,4 +115,5 @@ section h2 {
 
 section p {
     color: var(--accent1-color);
+    font-size: larger;
 }
