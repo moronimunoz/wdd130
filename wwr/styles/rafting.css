@@ -84,12 +84,17 @@ article {
     width: 125px;
 }
 
+.hero article {
+    padding: 20px;
+    text-align: center;
+}
+
 footer {
     border-top: 2px solid black;
 }
 
 footer {
-    color: #264653;
+    color: var(--secondary-color);
 }
 
 .socialmedia img {
@@ -100,10 +105,10 @@ footer {
 section h2 {
     padding-left: 10px;
     width: 100%;
-    background-color: #264653;
+    background-color: var(--accent1-color);
     color: #fff
 }
 
 section p {
-    color: #264653;
+    color: var(--accent1-color);
 }
