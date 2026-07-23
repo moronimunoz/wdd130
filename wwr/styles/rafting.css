@@ -85,6 +85,7 @@ article {
 }
 
 .hero article {
+    position: absolute;
     padding: 20px;
     text-align: center;
 }
