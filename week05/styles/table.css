@@ -1,3 +1,35 @@
+/* * {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+table {
+    width: 400px;
+    height: auto;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+.grey {
+    background-color: lightgray;
+}
+
+thead th {
+    background-color: black;
+    color: #fff
+}
+
+tfoot tr {
+    background-color: black;
+    color: #fff
+} */
+
 table {
     border-collapse: collapse;
     border: 2px solid rgb(140 140 140);
