@@ -1,5 +1,6 @@
 :root {
     --general-color: darkblue;
+    --inverse-monument: #c3c3c3;
     --inverse-w: white;
     --inverse-b: black;
     --inverse-border-g: grey;
@@ -18,7 +19,7 @@ aside {
     margin: 1rem;
     border: 1px solid var(--inverse-border-g, white);
     padding: 1rem;
-    background-color: var(--inverse-w, black);
+    background-color: var(--inverse-monument, rgb(105, 43, 105));
     color: var(--inverse-b, white);
     text-align: center;
 }
