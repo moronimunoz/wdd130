@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --general-color: darkblue;
     --inverse-monument: #c3c3c3;
@@ -11,22 +17,7 @@ body {
 }
 
 main {
-    max-width: 840px;
-}
-
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid var(--inverse-border-g, white);
-    padding: 1rem;
-    background-color: var(--inverse-monument, rgb(105, 43, 105));
-    color: var(--inverse-b, white);
-    text-align: center;
-}
-
-aside img {
-    width: 300px;
-    height: auto;
+    max-width: 800px;
 }
 
 nav {
@@ -36,29 +27,68 @@ nav {
 
 nav a {
     color: var(--inverse-w, black);
-    display: block;
+    display: inline;
     padding: 20px;
 }
 
 h1 {
+    padding: 10px;
     color: var(--general-color, skyblue);
 }
 
 main img {
-    width: 150px;
+    float: right;
+    width: 145px;
     height: auto;
     border: 1px solid var(--inverse-b, white);
     padding: 2px;
     box-shadow: 0 0 30px var(--inverse-border-g, white);
 }
 
+main li {
+    display: inline;
+}
+
 p {
     color: var(--inverse-b, white);
-    padding: 0;
+}
+
+main p {
+    color: var(--inverse-b, white);
+    padding-left: 30px;
+    padding-bottom: 2rem;
+}
+
+aside {
+    position: relative;
+    width: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+aside h2 {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+}
+
+aside img {
+    width: 18rem;
+    height: auto;
 }
 
 footer {
     margin-top: 15px;
     border-top: 1px solid var(--inverse-b, white);
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    color: white;
+    background-color: var(--inverse-monument);
 }
