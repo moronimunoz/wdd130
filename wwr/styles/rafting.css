@@ -190,6 +190,10 @@ figcaption {
     gap: 12px;
 }
 
+.socialmedia a{
+    text-decoration: none;
+}
+
 .socialmedia img {
     width: 32px;
     height: 32px;
