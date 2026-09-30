@@ -5,7 +5,7 @@
 }
 
 :root {
-    --primary-color: #ff3c00;
+    --primary-color: #0f2d39;
     /*forest green*/
     --secondary-color: #f4a261;
     /*warm sand*/
@@ -55,7 +55,7 @@ nav ul{
     justify-content: space-around;
 }
 li a{
-    text-decoration-style: var(--body-font);
+    text-decoration-style: var(--heading-font);
     color: var(--accent3-color);
     text-decoration: none;
 }
@@ -81,8 +81,8 @@ section p {
 }
 
 article {
-    background-color: var(--secondary-color);
-    border: 4px outset var(--accent2-color);
+    background-color: var(--accent1-color);
+    border: 4px outset var(--secondary-color);
 }
 
 h1 {
@@ -115,6 +115,7 @@ h2 {
 }
 
 .hero-text {
+    background-color: var(--primary-color);
     font-size: 0.9rem;
     color: var(--accent3-color);
     padding: 10px 0px;
@@ -128,6 +129,7 @@ h2 {
 }
 
 .hero article {
+    background-color: var(--accent2-color);
     margin: 0;
     position: absolute;
     left: 5%;
@@ -154,7 +156,7 @@ h2 {
 .history-section img {
     background-color: var(--accent2-color);
     padding: 4px;
-    border: 3px var(--accent1-color) outset;
+    border: 3px var(--secondary-color) outset;
     max-width: 200px;
     max-height: auto;
 }
@@ -172,7 +174,7 @@ h2 {
     font-size: 0.9rem;
 }
 .gallery {
-  border: 3px var(--accent1-color) outset;
+  border: 3px var(--secondary-color) outset;
   background-color: var(--accent2-color);
   align-content: space-between;
   display: flex;
@@ -188,7 +190,7 @@ h2 {
 }
 
 figcaption {
-  background-color: var(--secondary-color);
+  background-color:var(--primary-color);
   color: var(--accent3-color);
   font-size: 0.8rem;
   font: italic sans-serif;
