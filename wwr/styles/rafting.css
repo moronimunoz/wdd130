@@ -83,11 +83,11 @@ section {
     margin: 16px 0;
 }
 
-.hero-img {
+.hero img {
     width: 100%;
 }
 
-.hero-title {
+.hero h1 {
     position: absolute;
     top: 10px;
     left: 0;
@@ -95,7 +95,7 @@ section {
     font-size: 1.5rem;
 }
 
-.hero-card {
+.hero article{
     position: absolute;
     left: 5%;
     bottom: 25px;
@@ -105,7 +105,7 @@ section {
     border: 4px outset var(--secondary-color);
 }
 
-.hero-card-img {
+.hero article img{
     float: right;
     width: 96px;
     padding-left: 8px;
@@ -183,14 +183,14 @@ figcaption {
     color: var(--accent2-color);
 }
 
-.social-links {
+.socialmedia {
     grid-column: 3;
     justify-self: end;
     display: flex;
     gap: 12px;
 }
 
-.social-links img {
+.socialmedia img {
     width: 32px;
     height: 32px;
     background-color: var(--accent2-color);
