@@ -2,9 +2,8 @@
 :root {
     --primary-color: #0f2d39;
     --secondary-color: #f4a261;
-    --accent1-color: #264653;
-    --accent2-color: #e9c46a;
-    --accent3-color: white;
+    --accent1-color: #e9c46a;
+    --accent2-color: white;
     --heading-font: Georgia, "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -18,7 +17,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 img {
@@ -31,7 +30,7 @@ ul {
 }
 
 a {
-    color: var(--accent3-color);
+    color: var(--accent2-color);
     text-decoration: none;
 }
 
@@ -45,7 +44,7 @@ a {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--accent3-color);
+    color: var(--accent2-color);
     text-align: center;
     padding: 8px;
     background-color: rgba(38, 70, 83, 0.7);
@@ -81,6 +80,7 @@ section {
 /* ===== HERO ===== */
 .hero {
     position: relative;
+    margin: 16px 0;
 }
 
 .hero-img {
@@ -114,7 +114,7 @@ section {
 .hero-text {
     padding: 10px 0;
     font-size: 0.9rem;
-    color: var(--accent3-color);
+    color: var(--accent2-color);
     background-color: var(--primary-color);
 }
 
@@ -133,7 +133,7 @@ section {
 .history-content img {
     width: 200px;
     padding: 4px;
-    background-color: var(--accent2-color);
+    background-color: var(--accent1-color);
     border: 3px outset var(--secondary-color);
 }
 
@@ -147,7 +147,7 @@ section {
 .gallery-item {
     width: 130px;
     padding: 5px;
-    background-color: var(--accent2-color);
+    background-color: var(--accent1-color);
     border: 3px outset var(--secondary-color);
 }
 
@@ -162,7 +162,7 @@ figcaption {
     text-align: center;
     font-size: 0.8rem;
     font-style: italic;
-    color: var(--accent3-color);
+    color: var(--accent2-color);
     background-color: var(--primary-color);
 }
 
@@ -173,14 +173,14 @@ figcaption {
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 16px 24px;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
 }
 
 .copyright {
     grid-column: 2;
     text-align: center;
     font-size: 0.9rem;
-    color: var(--accent3-color);
+    color: var(--accent2-color);
 }
 
 .social-links {
@@ -193,6 +193,6 @@ figcaption {
 .social-links img {
     width: 32px;
     height: 32px;
-    background-color: var(--accent3-color);
+    background-color: var(--accent2-color);
     border-radius: 25%;
 }
