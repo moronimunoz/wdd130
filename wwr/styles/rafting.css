@@ -95,7 +95,7 @@ section {
     font-size: 1.5rem;
 }
 
-.hero article{
+.hero article {
     position: absolute;
     left: 5%;
     bottom: 25px;
@@ -105,7 +105,7 @@ section {
     border: 4px outset var(--secondary-color);
 }
 
-.hero article img{
+.hero article img {
     float: right;
     width: 96px;
     padding-left: 8px;
@@ -166,7 +166,7 @@ figcaption {
     background-color: var(--primary-color);
 }
 
-/* ===== FOOTER ===== */
+/* ===== FOOTER ===== About Us*/
 /* 3 columns: empty | copyright (centered) | social icons */
 .site-footer {
     display: grid;
@@ -190,7 +190,7 @@ figcaption {
     gap: 12px;
 }
 
-.socialmedia a{
+.socialmedia a {
     text-decoration: none;
 }
 
@@ -199,4 +199,52 @@ figcaption {
     height: 32px;
     background-color: var(--accent2-color);
     border-radius: 25%;
+}
+
+/* ===== FOOTER ===== Contact Us*/
+input,
+textarea,
+select {
+    padding: 1rem;
+    width: 100%;
+}
+
+label {
+    display: block;
+    padding-bottom: .3rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    display: block;
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 93%;
+    margin: 1rem auto;
+    border: 1px solid var(--border-color);
+
+}
+
+form {
+    background-color: var(--secondary-color);
+    border-radius: .5rem;
+    color: var(--text-color);
+}
+
+code {
+    display: block;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 1rem .5rem;
+    margin: 1rem 2.5rem;
+}
+
+.box {
+    margin: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+.quiz-item {
+    border: none;
 }
