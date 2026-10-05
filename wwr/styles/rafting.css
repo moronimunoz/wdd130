@@ -201,50 +201,141 @@ figcaption {
     border-radius: 25%;
 }
 
-/* ===== FOOTER ===== Contact Us*/
-input,
-textarea,
-select {
-    padding: 1rem;
+/* ===== CONTACT LAYOUT: mapa | formulario ===== */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 16px 0;
+}
+
+.contact-layout > * {
+    min-width: 0;
+}
+
+.map iframe {
     width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border: 0;
 }
 
-label {
+/* ===== CONTACT INFO ===== */
+.info {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.info p {
+    padding: 2px;
+}
+
+/* ===== CONTACT LAYOUT: mapa | formulario ===== */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 16px 0;
+}
+
+.contact-layout > * {
+    min-width: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border: 0;
+}
+
+/* ===== FORM ===== */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    background-color: var(--accent1-color);
+    border-radius: .5rem;
+}
+
+/* Fila: etiqueta a la izquierda, campo a la derecha */
+.field {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    align-items: center;
+    gap: 8px;
+}
+
+.field label {
     display: block;
-    padding-bottom: .3rem;
+    font-size: 0.9rem;
 }
 
+/* Message: etiqueta arriba, textarea abajo */
+.message {
+    grid-template-columns: 1fr;
+}
+
+/* Inputs de texto y textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: .25rem;
+    font-family: inherit;
+}
+
+/* Checkboxes: tamaño natural */
+input[type="checkbox"] {
+    width: auto;
+    flex-shrink: 0;
+}
+
+/* Message Purpose */
+.purpose {
+    align-items: start;
+}
+
+#purpose-label {
+    font-size: 0.9rem;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    font-size: 0.9rem;
+}
+
+/* Newsletter */
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+}
+
+/* Botón */
 button {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: .75rem;
     background-color: var(--primary-color);
-    color: white;
-    display: block;
-    border-radius: .5rem;
-    padding: 1rem;
-    width: 93%;
-    margin: 1rem auto;
-    border: 1px solid var(--border-color);
-
-}
-
-form {
-    background-color: var(--secondary-color);
-    border-radius: .5rem;
-    color: var(--text-color);
-}
-
-code {
-    display: block;
-    background-color: var(--text-color);
-    color: var(--background-color);
-    padding: 1rem .5rem;
-    margin: 1rem 2.5rem;
-}
-
-.box {
-    margin: 1rem;
-    border: 1px solid var(--border-color);
-}
-
-.quiz-item {
+    color: var(--accent2-color);
     border: none;
+    border-radius: .5rem;
+    cursor: pointer;
 }

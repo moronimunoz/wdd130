@@ -30,39 +30,63 @@
     </header>
 
     <!-- ========== MAIN ========== -->
-    <main>
+    <main class="container">
         <h1>White Water Rafting Company</h1>
-        <div class="info">
-            <p>direction</p>
-            <p>ciudad, estado</p>
-            <p>numero</p>
-            <p>email</p>
+
+        <address class="info">
+            <p>123 Main River Street</p>
+            <p>Kolob, California</p>
+            <p>+1 999 999 9999</p>
+            <p>info@whitewater.com</p>
+        </address>
+
+        <!-- Contenedor de 2 columnas -->
+        <div class="contact-layout">
+
+            <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2735.2920882403514!2d-60.633313939867065!3d-32.94720868952697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7abbcd80c2acb%3A0xe9b7db9efb6c048!2sCorreo%20Argentino%20-%20Sucursal%20Correo%20Central%20Rosario!5e0!3m2!1ses-419!2sar!4v1791139620123!5m2!1ses-419!2sar"
+                  width="600" height="450" allowfullscreen="" loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin" title="Map of our location"
+                  loading="lazy"></iframe>
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Placeholder">
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Placeholder">
+                </div>
+
+                <div class="field purpose" role="group" aria-labelledby="purpose-label">
+                    <span id="purpose-label">Message Purpose</span>
+                    <div class="options">
+                        <label><input type="checkbox" name="general"> General Inquiry</label>
+                        <label><input type="checkbox" name="reservation"> Reservation
+                            Question</label>
+                        <label><input type="checkbox" name="website"> Website Suggestion</label>
+                    </div>
+                </div>
+
+                <div class="field message">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4"
+                      placeholder="Type here"></textarea>
+                </div>
+
+                <label class="newsletter">
+                    <input type="checkbox" name="newsletter" checked>
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Get in Touch!</button>
+            </form>
         </div>
-        <form class="box">
-            <div class="quiz-item box">
-                <label for="q1">1. What does the acronym CSS stand for?</label>
-                <input type="text" id="q1" name="q1">
-            </div>
-            <div class="quiz-item box">
-                <label for="q2">2. How are Id and class attribute selected in CSS?</label>
-                <textarea id="q2" name="q2"></textarea>
-            </div>
-            <div class="quiz-item box">
-                <label for="q3">3. Which of the following is a valid CSS comment?</label>
-                <select id="q3" name="q3">
-                    <option value="" selected disabled>Choose One ...</option>
-                    <option value="a">A. &lt;!--This is a comment--&gt;</option>
-                    <option value="b">B. /*This is a comment*/</option>
-                    <option value="c">C. //This is a comment</option>
-                </select>
-            </div>
-            <div class="quiz-item box">
-                <label for="q4">4. What is the bottom margin given this declaration?</label>
-                <code class="code">margin: 10px 5px 15px;</code>
-                <input type="number" id="q4" name="q4">
-            </div>
-            <button type="submit">Submit Quiz for Grading</button>
-        </form>
     </main>
 
     <!-- ========== FOOTER ========== -->
