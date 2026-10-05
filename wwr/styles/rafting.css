@@ -217,6 +217,7 @@ figcaption {
 .styling-h1 {
     font-family: var(--body-font);
     text-shadow: 3px 3px 0px var(--primary-color);
+    color: darkslategrey;
     text-align: center;
     padding: 8px;
     background: radial-gradient(closest-side, var(--accent1-color), var(--secondary-color));
