@@ -239,7 +239,7 @@ figcaption {
     flex-direction: column;
     gap: 12px;
     padding: 16px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     border-radius: .5rem;
 }
 
