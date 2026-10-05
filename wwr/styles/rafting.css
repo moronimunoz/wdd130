@@ -261,7 +261,6 @@ figcaption {
     border-radius: .5rem;
 }
 
-/* Fila: etiqueta a la izquierda, campo a la derecha */
 .field {
     display: grid;
     grid-template-columns: 90px 1fr;
@@ -274,12 +273,10 @@ figcaption {
     font-size: 0.9rem;
 }
 
-/* Message: etiqueta arriba, textarea abajo */
 .message {
     grid-template-columns: 1fr;
 }
 
-/* Inputs de texto y textarea */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -290,7 +287,6 @@ textarea {
     font-family: inherit;
 }
 
-/* Checkboxes: tamaño natural */
 input[type="checkbox"] {
     width: auto;
     flex-shrink: 0;
@@ -327,7 +323,7 @@ input[type="checkbox"] {
     font-size: 0.85rem;
 }
 
-/* Botón */
+/* Button */
 button {
     display: block;
     width: 100%;
