@@ -101,7 +101,7 @@ section {
     bottom: 25px;
     width: 90%;
     padding: 8px;
-    background-color: rgba(233, 196, 106, 0.9);
+    background-color: var(--accent1-color);
     border: 4px outset var(--secondary-color);
 }
 
