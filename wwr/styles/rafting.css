@@ -346,6 +346,8 @@ button {
     cursor: pointer;
 }
 
+/* .gallery-contactus */
+
 .gallery-section-contactus {
     background: radial-gradient(closest-side, var(--accent1-color), var(--secondary-color));
     padding-bottom: 1rem;
