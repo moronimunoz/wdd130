@@ -214,14 +214,6 @@ figcaption {
 }
 
 /* ===== CONTACT LAYOUT: map | form ===== */
-.styling-h1 {
-    font-family: var(--body-font);
-    text-shadow: 3px 3px 0px var(--primary-color);
-    color: darkslategrey;
-    text-align: center;
-    padding: 8px;
-    background: radial-gradient(closest-side, var(--accent1-color), var(--secondary-color));
-}
 
 .contact-layout {
     display: grid;
@@ -247,7 +239,7 @@ figcaption {
     flex-direction: column;
     gap: 12px;
     padding: 16px;
-    background: radial-gradient(closest-side, var(--accent1-color) 20%, var(--secondary-color));
+    background-color: var(--primary-color);
     border-radius: .5rem;
 }
 
@@ -330,7 +322,7 @@ button {
 /* gallery-contactus */
 
 .gallery-section-contactus {
-    background: radial-gradient(closest-side, var(--accent1-color), var(--secondary-color));
+    background-color: var(--primary-color);
     padding-bottom: 1rem;
 }
 
