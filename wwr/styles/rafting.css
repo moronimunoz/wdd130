@@ -3,7 +3,7 @@
     --primary-color: #0f2d39;
     --secondary-color: #f4a261;
     --accent1-color: #e9c46a;
-    --accent2-color: white;
+    --accent2-color: #ffffff;
     --heading-font: Georgia, "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -232,7 +232,16 @@ figcaption {
     padding: 2px;
 }
 
-/* ===== CONTACT LAYOUT: mapa | formulario ===== */
+/* ===== CONTACT LAYOUT: map | form ===== */
+.styling-h1 {
+    font-family: var(--body-font);
+    color: var(--accent2-color);
+    text-shadow: 3px 3px 0px var(--primary-color);
+    text-align: center;
+    padding: 8px;
+    background: radial-gradient(closest-side, var(--accent1-color), var(--secondary-color));
+}
+
 .contact-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -257,7 +266,7 @@ figcaption {
     flex-direction: column;
     gap: 12px;
     padding: 16px;
-    background-color: var(--accent1-color);
+    background: radial-gradient(closest-side, var(--accent1-color) 20%, var(--secondary-color));
     border-radius: .5rem;
 }
 
@@ -287,7 +296,8 @@ textarea {
     font-family: inherit;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
     width: auto;
     flex-shrink: 0;
 }
@@ -334,4 +344,28 @@ button {
     border: none;
     border-radius: .5rem;
     cursor: pointer;
+}
+
+.gallery-section-contactus {
+    background: radial-gradient(closest-side, var(--accent1-color), var(--secondary-color));
+    padding-bottom: 1rem;
+}
+
+.gallery-list-contactus {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.gallery-item-contactus {
+    width: 130px;
+    padding: 5px;
+    background-color: var(--primary-color);
+    border: 3px outset var(--accent2-color);
+}
+
+.gallery-item-contactus img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
 }

@@ -31,7 +31,7 @@
 
     <!-- ========== MAIN ========== -->
     <main class="container">
-        <h1>White Water Rafting Company</h1>
+        <h1 class="styling-h1">White Water Rafting Company</h1>
 
         <address class="info">
             <p>123 Main River Street</p>
@@ -66,10 +66,12 @@
                 <div class="field purpose" role="group" aria-labelledby="purpose-label">
                     <span id="purpose-label">Message Purpose</span>
                     <div class="options">
-                        <label><input type="checkbox" name="general"> General Inquiry</label>
-                        <label><input type="checkbox" name="reservation"> Reservation
+                        <label><input type="radio" name="purpose" value="general" checked> General
+                            Inquiry</label>
+                        <label><input type="radio" name="purpose" value="reservation"> Reservation
                             Question</label>
-                        <label><input type="checkbox" name="website"> Website Suggestion</label>
+                        <label><input type="radio" name="purpose" value="website"> Website
+                            Suggestion</label>
                     </div>
                 </div>
 
@@ -87,6 +89,29 @@
                 <button type="submit">Get in Touch!</button>
             </form>
         </div>
+
+        <!-- Gallery -->
+        <section class="gallery-section-contactus">
+            <h2 class="section-title">WE ARE HERE TO SERVE YOU</h2>
+            <div class="gallery-list-contactus">
+                <figure class="gallery-item-contactus">
+                    <img src="images/michael.jpg" alt="picture of michael ross">
+                    <figcaption>Michael Ross</figcaption>
+                </figure>
+                <figure class="gallery-item-contactus">
+                    <img src="images/leandro.jpg" alt="picture of leandro hermoso">
+                    <figcaption>Leandro Hermoso</figcaption>
+                </figure>
+                <figure class="gallery-item-contactus">
+                    <img src="images/rian.jpeg" alt="picture of rian perez">
+                    <figcaption>Rian Perez</figcaption>
+                </figure>
+                <figure class="gallery-item-contactus">
+                    <img src="images/robert.jpeg" alt="picture robert mcalister">
+                    <figcaption>Robert McAlister</figcaption>
+                </figure>
+            </div>
+        </section>
     </main>
 
     <!-- ========== FOOTER ========== -->
