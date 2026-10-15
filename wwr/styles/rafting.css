@@ -344,3 +344,145 @@ button {
     height: 80px;
     object-fit: cover;
 }
+
+/* ===== HOME: HEADER SOBRE EL HERO ===== */
+
+.hero-home {
+    position: relative;
+}
+
+.hero-home-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Modificador del .site-header: transparente y a todo el ancho */
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 840px;
+    margin: 0;
+    background-color: rgba(15, 45, 57, 0.6);
+}
+
+.header-overlay .site-logo img {
+    width: 60px;
+    align-content: center;
+    border-radius: 50%;
+}
+
+.header-overlay .main-nav {
+    flex: 1;
+}
+
+.header-overlay .nav-list {
+    justify-content: space-around;
+}
+
+/* Texto centrado sobre la imagen */
+.hero-home-text {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--accent2-color);
+}
+
+.hero-home-text h1 {
+    background-color: transparent;
+    font-size: 2.5rem;
+}
+
+.hero-home-text h1,
+.hero-home-text p {
+    text-shadow: 0px 2px 6px var(--primary-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    border-radius: .25rem;
+}
+
+/* ===== HOME: 3 IMÁGENES CON GRID ===== */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 48px auto;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    padding: 5px;
+    background-color: var(--accent1-color);
+    border: 3px outset var(--secondary-color);
+}
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+    margin: 12px auto 0;
+}
+
+/* Sobrescribe el figcaption global (fondo oscuro) solo en esta sección */
+.feature figcaption {
+    background-color: transparent;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-style: normal;
+}
+
+/* the meddle */
+.rectangle {
+    background-color: var(--accent1-color);
+    padding: 40px 0;
+    margin-bottom: 48px;
+    /* separación con el footer */
+}
+
+.rectangle-contenido {
+    position: relative;
+    width: 630px;
+    /* más angosto que el gris, centrado */
+    margin: 0 auto;
+}
+
+.rectangle-img {
+    width: 66%;
+}
+
+.rectangle-cartel {
+    position: absolute;
+    right: 0;
+    /* se sale por la derecha de la imagen */
+    bottom: 25%;
+    width: 53%;
+    padding-bottom: 12px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-size: small;
+}
+
+/* Botón Join Us: 30% del ancho de la caja, centrado, color secundario */
+.rectangle-btn {
+    display: block;
+    width: 30%;
+    margin: 4px auto 0;
+    padding: .5rem;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    border-radius: .25rem;
+}
