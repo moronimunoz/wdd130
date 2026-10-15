@@ -475,7 +475,7 @@ button {
     font-size: small;
 }
 
-/* Botón Join Us: 30% del ancho de la caja, centrado, color secundario */
+/* Button Join Us: 30% weight box, centered, secundary color */
 .rectangle-btn {
     display: block;
     width: 30%;
@@ -485,4 +485,66 @@ button {
     background-color: var(--accent1-color);
     color: var(--primary-color);
     border-radius: .25rem;
+}
+
+.trip-card {
+    padding: 12px;
+    margin-bottom: 48px;
+    background-color: var(--accent1-color);
+}
+
+/* normal row: big img | 2 img | text */
+.trip-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2.8fr;
+    grid-template-rows: repeat(2, 190px);
+    gap: 12px;
+}
+
+/* inverted row: text | 2 img | big img */
+.trip-grid--reverse {
+    grid-template-columns: 2.8fr 1fr 1fr;
+}
+
+.trip-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- normal row --- */
+.trip-img-big { grid-column: 1; grid-row: 1 / 3; }
+.trip-img-a   { grid-column: 2; grid-row: 1; }
+.trip-img-b   { grid-column: 2; grid-row: 2; }
+.trip-text    { grid-column: 3; grid-row: 1 / 3; }
+
+/* --- inverted row --- */
+.trip-grid--reverse .trip-text    { grid-column: 1; }
+.trip-grid--reverse .trip-img-a   { grid-column: 2; }
+.trip-grid--reverse .trip-img-b   { grid-column: 2; }
+.trip-grid--reverse .trip-img-big { grid-column: 3; }
+
+/* text box */
+.trip-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+}
+
+.trip-text h2 {
+    font-size: 1.5rem;
+}
+
+.trip-btn {
+    align-self: center;
+    padding: .5rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    border-radius: 999px;
 }
